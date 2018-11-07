@@ -1,8 +1,12 @@
 $fontColor: #0091aa;
 $colorHeading: #be4a14;
-#content  // div with id: content
+#content, #dumpcontent  // div with id: content, dumpcontent
 {
     color: $fontColor;
+}
+
+#dumpcontent {
+  margin-top: 100px;
 }
 
 h2
@@ -12,4 +16,13 @@ h2
 
 h1{
     @extend h2;
+}
+
+table tr th {
+  padding: 0 20px 0 0;
+}
+
+table tr td {
+  padding: 10px;
+  border: 1px solid #e7e7e7;
 }
